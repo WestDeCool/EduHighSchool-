@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News Network</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="public/Css/Main.css">
+    <link rel="stylesheet" href="public/Css/responsive.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="EduHighSchool Logo">
+                <h1>EduHighSchool</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login-btn">Student Login</button>
+                <button class="login-btn teacher">Teacher Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Digital Learning</h1>
+            <p>Access quality education anytime, anywhere</p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Online Learning</h3>
+                <p>Access classes and materials 24/7</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Expert Teachers</h3>
+                <p>Learn from qualified educators</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-book-reader"></i>
+                <h3>Rich Resources</h3>
+                <p>Comprehensive study materials</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Track Progress</h3>
+                <p>Monitor your performance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="courses-grid">
+            <!-- Courses will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <h2>Class Schedule</h2>
+        <div class="schedule-container">
+            <div class="schedule-filters">
+                <select id="grade-filter">
+                    <option value="">Select Grade</option>
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                    <option value="11">Grade 11</option>
+                    <option value="12">Grade 12</option>
+                </select>
+                <select id="subject-filter">
+                    <option value="">Select Subject</option>
+                    <!-- Subjects will be dynamically added -->
+                </select>
+            </div>
+            <div class="timetable">
+                <!-- Timetable will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <h2>Learning Resources</h2>
+        <div class="resources-grid">
+            <!-- Resources will be dynamically added -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@eduhighschool.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Education St, City, Country</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduHighSchool. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="public/js/main.js"></script>
+</body>
+</html>
